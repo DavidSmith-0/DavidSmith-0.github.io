@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://DavidSmith-0.github.io/sitemap.xml
