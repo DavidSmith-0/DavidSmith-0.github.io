@@ -1,14 +1,18 @@
-# NextDoor Websites — GitHub Pages Site
+# NextDoor Websites — Full Pack
 
-Local-first websites for small businesses. Launch in 48 hours with no monthly hosting fees.
+Everything you need to launch your site on GitHub Pages and start outreach.
 
-## Quick Deploy
-1. Upload these files to the root of your repo `DavidSmith-0.github.io`.
-2. Settings → Pages → Source: Deploy from a branch (Branch: `main`, Folder: `/ (root)`).
-3. Add a blank file named `.nojekyll` in the repo root (prevents Jekyll issues).
+- `web/` → deploy-ready website
+- `outreach/` → email kit (CSV + script + templates)
+
+## Deploy
+1. Create a repo named `DavidSmith-0.github.io` (Public).
+2. Upload contents of `web/` to repo root.
+3. Settings → Pages → Source: `main` / `/ (root)` (and keep `.nojekyll` in root).
+4. Visit https://DavidSmith-0.github.io
 
 ## Configure
-- In **script.js**, replace:
-  - `STRIPE_LINK` with your Stripe **Payment Link** URL
-  - `FORMSPREE_ENDPOINT` with your Formspree endpoint
-- Optional: add a `CNAME` file with `www.yourdomain.com` for a custom domain.
+- Open `web/script.js` and set:
+  - `STRIPE_LINK = https://buy.stripe.com/...`
+  - `FORMSPREE_ENDPOINT = https://formspree.io/f/...`
+- Optional: add `CNAME` file with your custom domain.
