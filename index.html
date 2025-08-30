@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NextDoor Websites — Polished local business sites in 48 hours</title>
+  <meta name="description" content="Beautiful, affordable websites built for local small businesses. Flat pricing, zero hosting fees, live in 48 hours.">
+  <link rel="icon" href="assets/logo.svg">
+  <!-- Open Graph -->
+  <meta property="og:title" content="NextDoor Websites — Polished local business sites in 48 hours">
+  <meta property="og:description" content="Beautiful, affordable websites built for local businesses.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://DavidSmith-0.github.io/">
+  <meta property="og:image" content="https://DavidSmith-0.github.io/assets/social-card.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/"><img src="assets/logo.svg" alt="NextDoor Websites logo" width="28" height="28"> NextDoor Websites</a>
+    <nav>
+      <a href="#examples">Examples</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact" class="btn small">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero container">
+    <div class="hero-copy">
+      <h1>Launch your local business site in 48 hours.</h1>
+      <p>Beautiful, affordable websites built for neighborhood businesses. Flat pricing, <b>$0 hosting</b>, mobile‑first, and fast.</p>
+      <div class="actions">
+        <a href="#pricing" class="btn">Get Started</a>
+        <a href="nextdoor.html" class="btn ghost">See Neighbor Offer</a>
+      </div>
+      <p class="meta">Static hosting • Free SSL • Custom domains • SEO‑ready</p>
+    </div>
+    <div class="hero-art">
+      <img src="assets/hero.svg" alt="Abstract hero art">
+    </div>
+  </section>
+
+  <section id="examples" class="container grid3">
+    <article>
+      <h3>Café / Restaurant</h3>
+      <p>Menu, hours, map, reviews, and click‑to‑call. Clean, appetizing layout.</p>
+    </article>
+    <article>
+      <h3>Contractor / Services</h3>
+      <p>Before/after gallery, estimate form, phone CTA, and service area map.</p>
+    </article>
+    <article>
+      <h3>Trainer / Gym</h3>
+      <p>Packages, class schedule, testimonials, and quick sign‑up CTA.</p>
+    </article>
+  </section>
+
+  <section id="features" class="container grid3">
+    <article>
+      <h3>Zero hosting fees</h3>
+      <p>Your site runs on GitHub’s global CDN. Push to <code>main</code> to go live.</p>
+    </article>
+    <article>
+      <h3>Contact form</h3>
+      <p>Formspree integration sends messages right to your inbox—no backend needed.</p>
+    </article>
+    <article>
+      <h3>Stripe checkout</h3>
+      <p>Use a Stripe Payment Link to reserve your spot securely in one click.</p>
+    </article>
+  </section>
+
+  <section id="pricing" class="container pricing">
+    <h2>Simple pricing</h2>
+    <div class="card">
+      <h3>Neighbor Special</h3>
+      <ul>
+        <li>One‑page, mobile‑first site</li>
+        <li>Contact form + Google Map</li>
+        <li>SEO + analytics ready</li>
+        <li>Delivered in 48 hours</li>
+      </ul>
+      <a id="reserveBtnHome" class="btn" href="#" target="_blank" rel="noopener">Reserve — $99</a>
+      <p class="fine">You’ll be redirected to Stripe for secure payment.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="container contact">
+    <h2>Contact</h2>
+    <form id="contactForm" aria-label="Contact form" novalidate>
+      <div class="row">
+        <label for="name">Name</label>
+        <input id="name" name="name" autocomplete="name" required>
+      </div>
+      <div class="row">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+      </div>
+      <div class="row">
+        <label for="message">Tell me about your business</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <!-- Honeypot -->
+      <input type="text" name="company" id="company" class="hp" tabindex="-1" autocomplete="off">
+      <button class="btn" type="submit">Send message</button>
+      <p id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+    <p class="fine alt">Prefer email? <a href="mailto:hello@example.com">hello@example.com</a></p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer">
+    <small>© <span id="year"></span> NextDoor Websites. All rights reserved.</small>
+    <div class="links">
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="sitemap.xml">Sitemap</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

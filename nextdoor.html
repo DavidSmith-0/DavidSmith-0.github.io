@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Neighbor Special — NextDoor Websites</title>
+  <meta name="description" content="Launch a fast, polished website in 48 hours. Flat $99 setup, $0 hosting.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/"><img src="assets/logo.svg" alt="Logo" width="28" height="28"> NextDoor Websites</a>
+    <nav><a href="/#examples">Examples</a><a href="/#pricing">Pricing</a><a href="#contact" class="btn small">Contact</a></nav>
+  </div>
+</header>
+
+<main class="container" style="max-width:980px">
+  <h1>Neighbor Special on Nextdoor</h1>
+  <p>Launch a clean, mobile-first website in <b>48 hours</b>. Flat <b>$99</b> setup, <b>$0</b> hosting (GitHub Pages). No lock‑in.</p>
+
+  <section id="examples" class="grid3" style="margin-top:16px">
+    <article><h3>Café / Restaurant</h3><p>Menu, hours, map, reviews, click‑to‑call.</p></article>
+    <article><h3>Contractor / Services</h3><p>Before/after gallery, estimate form, phone CTA.</p></article>
+    <article><h3>Trainer / Gym</h3><p>Packages, schedule, testimonials, sign‑up CTA.</p></article>
+  </section>
+
+  <div class="pricing" style="margin-top:20px">
+    <div class="card">
+      <h3>Neighbor Special</h3>
+      <ul>
+        <li>One‑page site (speed‑optimized)</li>
+        <li>Contact form to your email</li>
+        <li>Google Maps + click‑to‑call</li>
+      </ul>
+      <a id="reserveBtnND" class="btn" href="#" target="_blank" rel="noopener">Reserve — $99</a>
+      <p class="fine">Prefer to chat first? Use the contact form below.</p>
+    </div>
+  </div>
+
+  <section id="contact" class="contact" style="margin-top:18px">
+    <h2>Contact</h2>
+    <form id="contactForm" novalidate>
+      <div class="row"><label for="name">Name</label><input id="name" name="name" required></div>
+      <div class="row"><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+      <div class="row"><label for="message">What business is this for?</label><textarea id="message" name="message" rows="5" required></textarea></div>
+      <input type="text" name="company" id="company" class="hp">
+      <button class="btn" type="submit">Send</button>
+      <p id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer"><div class="container footer"><small>© <span id="year"></span> NextDoor Websites</small></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
